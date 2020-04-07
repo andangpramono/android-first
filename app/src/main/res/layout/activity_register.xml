@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/registerscrn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Register"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <EditText
+    android:id="@+id/first_name_register"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="10dp"
+    android:hint="Nama Depan"
+    android:textSize="15sp"
+    android:ems="15"/>
+
+    <EditText
+        android:id="@+id/last_name_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:hint="Nama Belakang"
+        android:textSize="15sp"
+        android:ems="15"/>
+
+    <EditText
+        android:id="@+id/email_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:hint="e.g email@email.com"
+        android:textSize="15sp"
+        android:ems="15"/>
+
+    <EditText
+        android:id="@+id/phone_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:hint="Nomor HP"
+        android:textSize="15sp"
+        android:ems="15"/>
+
+    <EditText
+        android:id="@+id/alamat_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:hint="Alamat"
+        android:textSize="15sp"
+        android:ems="15"/>
+
+    <EditText
+        android:id="@+id/password_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:inputType="textPassword"
+        android:layout_gravity="center"
+        android:hint="Password"
+        android:textSize="15sp"
+        android:ems="15" />
+    <EditText
+        android:id="@+id/password_confirm_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:inputType="textPassword"
+        android:layout_gravity="center"
+        android:hint="Konfirmasi Password"
+        android:textSize="15sp"
+        android:ems="15" />
+    <TextView android:id="@+id/error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:gravity="center"
+        android:textSize="10sp"
+        android:textColor="#FF1300"/>
+    <Button
+        android:id="@+id/btnregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="register" />
+    <TextView android:id="@+id/lnkLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Login here"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="#3F51B5"/>
+</LinearLayout>

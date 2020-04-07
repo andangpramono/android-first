@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/activity_brand"
+    tools:context=".Brand"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="loading"
+            android:textColor="#000"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+
+
+        <TextView
+            android:id="@+id/textkategori"
+            android:layout_toRightOf="@id/nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="....."
+            android:textColor="#000000"
+            android:textSize="12dp" />
+        <Button
+            android:id="@+id/gotopenawaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Penawaran" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            app:cardBackgroundColor="#fff">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/nama"
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:text="Nama Brand"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                    <TextView
+                        android:id="@+id/sep"
+                        android:layout_toRightOf="@id/nama"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=": "
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                    <TextView
+                        android:id="@+id/textnama"
+                        android:layout_toRightOf="@id/sep"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/investasi"
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:text="Investasi Minimal"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                    <TextView
+                        android:id="@+id/sep2"
+                        android:layout_toRightOf="@id/investasi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=": "
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                    <TextView
+                        android:id="@+id/textinvestasi"
+                        android:layout_toRightOf="@id/sep2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/cp"
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:text="Contact Person"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                    <TextView
+                        android:id="@+id/sep3"
+                        android:layout_toRightOf="@id/cp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=": "
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                    <TextView
+                        android:id="@+id/textcp"
+                        android:layout_toRightOf="@id/sep3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/alamat"
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:text="Alamat"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                    <TextView
+                        android:id="@+id/sep4"
+                        android:layout_toRightOf="@id/alamat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=": "
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                    <TextView
+                        android:id="@+id/textalamat"
+                        android:layout_toRightOf="@id/sep4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">                            >
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recycler_view"
+                                android:layout_width="match_parent"
+
+                                android:layout_height="match_parent"/>
+
+                        </LinearLayout>
+
+                </ScrollView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="WebViewLayout">
+                <WebView
+                    android:id="@+id/proposal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+    </LinearLayout>
+</ScrollView>

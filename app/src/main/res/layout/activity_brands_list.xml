@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Brands_list"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200px">
+        <ImageView
+            android:id="@+id/img_profil"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"/>
+        <LinearLayout
+            android:id="@+id/infouser"
+            android:layout_toRightOf="@id/img_profil"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textnamauser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:text="First Last Name"
+                android:textColor="@android:color/black"
+                />
+            <TextView
+                android:id="@+id/textemailuser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="8dp"
+                android:text="First Last Name"
+                />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnlogout"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10sp"
+            android:layout_toRightOf="@+id/infouser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"/>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">                            >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view1"
+                app:spanCount="2"
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
